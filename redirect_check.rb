@@ -1,5 +1,5 @@
 require 'sinatra'
-require File.expand_path(File.join(File.dirname(__FILE__), 'redirect_follower.rb'))
+require ::File.expand_path('../redirect_follower', __FILE__)
 
 get '/:name' do |url|
     if url == 'favicon.ico' 
