@@ -20,6 +20,7 @@ class RedirectFollower
 	def resolve
 		raise TooManyRedirects if redirect_limit < 0
 
+    # what if URI.parse raise an URI::InvalidURIError?
 		self.response = Net::HTTP.get_response(URI.parse(url))
 
 		#logger.info "redirect limit: #{redirect_limit}"
