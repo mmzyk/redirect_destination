@@ -1,2 +1,2 @@
-require 'redirect_destination'
+require './redirect_destination'
 run Sinatra::Application
