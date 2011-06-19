@@ -19,3 +19,7 @@ get '/:check' do
      
     final_destination = RedirectFollower.new(url).resolve
 end  
+
+get '/api' do
+  "Api docs go here - mostly how to use check/url=?"
+end  
