@@ -1,4 +1,4 @@
-#Redirect Check
+#Redirect Destination
 
 A service for following redirects and reporting back the final destination.
 
